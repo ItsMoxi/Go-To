@@ -17,7 +17,7 @@ import { FloatComponent } from './float/float.component';
   declarations: [
     AppComponent,
 
-    SplashComponent
+    SplashComponent,
 
     MapPageComponent,
     PaymentComponent,
