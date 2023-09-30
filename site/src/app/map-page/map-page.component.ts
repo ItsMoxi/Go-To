@@ -7,8 +7,8 @@ import { DomSanitizer, SafeResourceUrl } from '@angular/platform-browser';
   styleUrls: ['./map-page.component.css']
 })
 export class MapPageComponent {
-  lath=28.100799;
-  long=-28.100799;
+  lath = -25.7676604;
+  long = 28.181238;
   url!: SafeResourceUrl;
 
   constructor(private sanitizer: DomSanitizer) { }

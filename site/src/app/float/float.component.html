@@ -2,6 +2,8 @@
     <span *ngIf="!open" (click)="showhide()" class="material-symbols-outlined">menu</span>
 </div>
 <div *ngIf="open" id="sidebar">
+    <p><span (click)="showhide()" class="material-symbols-outlined">close</span></p>
+    <p routerLink="./find" (click)="showhide()">find</p>
     <p routerLink="./chat" (click)="showhide()">chat</p>
     <p routerLink="./payment" (click)="showhide()">payment</p>
 </div>
