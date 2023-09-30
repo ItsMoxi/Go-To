@@ -1,0 +1,7 @@
+<div>
+    <span *ngIf="!open" (click)="showhide()" class="material-symbols-outlined">menu</span>
+</div>
+<div *ngIf="open" id="sidebar">
+    <p routerLink="./chat" (click)="showhide()">chat</p>
+    <p routerLink="./payment" (click)="showhide()">payment</p>
+</div>
