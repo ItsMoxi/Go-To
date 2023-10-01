@@ -20,4 +20,18 @@ div form input{
     margin: 0 5px;
     border: 2px solid black;
     border-radius: 10px;
+    position: relative;
+}
+#languages{
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#languages input{
+    padding: 5px 20px;
+    background-color: transparent;
+    border: 2px solid black;
+    border-radius: 5px;
 }

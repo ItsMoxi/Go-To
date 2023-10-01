@@ -1,12 +1,21 @@
 <div style="min-height: 10vh;background-color: white;width: 80vh;">
 
 </div>
-<div style="min-height: 80vh;background-color: blue;width: 100%;">
-
+<div style="min-height: 80vh;max-height: 80vh;overflow-y: scroll; background-color: rgba(128, 128, 128, 0.149);padding:0 10px;width: 100%;">
+  <p *ngFor="let i of translated; let j= index">{{translated[j]}}</p>
 </div>
 
 <div id="inputField">
+  <div id="languages">
+    <input (click)="changeLang('xh')" type="button" name="sotho" value="xhosa"/>
+    <input (click)="changeLang('zu')" type="button" name="zulu" value="zulu"/>
+    <input (click)="changeLang('st')"  type="button" name="english" value="sesotho"/>
+  </div>
     <form action="">
-      <input type="text" name=""/><input type="button" name="search" value="translate"/><input type="button" name="search" value="send"/>
+      <div>
+        <input #Text type="text" name=""/>
+        <input (click)="translate(Text.value)" type="button" name="search" value="translate"/>
+        <input type="button" name="search" value="send"/>
+      </div>
     </form>
 </div>
